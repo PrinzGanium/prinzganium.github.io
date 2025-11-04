@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>PDF Viewer — sneaker.pdf</title>
+    <title>A website about sneakers.pdf</title>
     <style>
         html,body { height:100%; margin:0; font-family:system-ui,Segoe UI,Roboto,Arial; background:#f4f4f6; }
         .toolbar {
             display:flex; gap:.5rem; align-items:center;
-            padding:.5rem; background:#fff; border-bottom:1px solid #e1e1e6;
+            padding:.5rem; background:#ff6200; border-bottom:1px solid #e1e1e6;
             position:sticky; top:0; z-index:10;
         }
         .toolbar button, .toolbar a {
@@ -23,11 +23,7 @@
 </head>
 <body>
     <div class="toolbar">
-        <button id="openBtn" title="Open in new tab">Open</button>
-        <a id="downloadLink" title="Download" href="sneaker.pdf" download>Download</a>
-        <button id="printBtn" title="Print">Print</button>
-        <div style="flex:1"></div>
-        <div style="font-size:.9rem;color:#666">PDF viewer</div>
+        <div style="font-size:.9rem;color:#ffffff">OMG sneakers for my darling!</div>
     </div>
 
     <div class="viewer" id="viewer">
@@ -37,7 +33,7 @@
         <!-- Fallback if iframe fails: object with fallback link -->
         <noscript>
             <div class="msg">
-                JavaScript is disabled. You can <a href="sneaker.pdf" target="_blank">open the PDF in a new tab</a> or download it.
+                JavaScript is disabled. Sorry my love. You can <a href="sneaker.pdf" target="_blank">open the PDF in a new tab</a> or download it. But I'm guessing you can't hahu.
             </div>
         </noscript>
     </div>
@@ -46,9 +42,6 @@
         (function(){
             const pdfUrl = 'sneaker.pdf';
             const frame = document.getElementById('pdfFrame');
-            const openBtn = document.getElementById('openBtn');
-            const downloadLink = document.getElementById('downloadLink');
-            const printBtn = document.getElementById('printBtn');
 
             downloadLink.href = pdfUrl;
 
